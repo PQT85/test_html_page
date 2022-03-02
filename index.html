@@ -1,6 +1,6 @@
  <html>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <body oncontextmenu="return false;" onselectstart="return false;">
+    <body oncontextmenu="return false;" onselectstart="return false;" class="disable-dbl-tap-zoom">
 	
         <!--h1>WebSocket client html</h1>
         <label>You need to launch app Android to create WebSocket Server</label><br>
@@ -172,6 +172,10 @@
 			* {
    					 -ms-touch-action: manipulation;
    					 touch-action: manipulation;
+			}
+			.disable-dbl-tap-zoom {
+  				touch-action: manipulation;
+				-ms-touch-action: manipulation;
 			}
 		</style>
         

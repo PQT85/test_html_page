@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TikTok Redirect</title>
+</head>
+<body>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    const state = params.get("state");
+
+    if (code) {
+      // redirect về app
+      window.location.href = `weplayz19://tiktokcallback?code=${code}&state=${state}`;
+    } else {
+      document.body.innerText = "No code found!";
+    }
+  </script>
+</body>
+</html>
